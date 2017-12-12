@@ -9,8 +9,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.usuario)
-    TextView usuario;
+    @BindView(R.id.cliente)
+    TextView cliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         String campo = getIntent().getStringExtra("USUARIO");
-        usuario.setText(campo);
+        cliente.setText(campo);
 
     }
 }
